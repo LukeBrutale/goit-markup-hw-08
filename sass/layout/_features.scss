@@ -1,0 +1,21 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-item {
+    max-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.features-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--subsecondary-bg-color);
+}

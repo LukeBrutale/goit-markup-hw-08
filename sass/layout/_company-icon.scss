@@ -1,0 +1,10 @@
+.company-list-icon {
+    transition: fill var(--duration) var(--timing-function);
+
+    .company-list-link:hover &,
+    .company-list-link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+

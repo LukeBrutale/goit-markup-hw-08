@@ -1,0 +1,216 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: all var(--duration) var(--timing-function);
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+
+    background-color: var(--primary-write-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-close-btn {
+    width: 18px;
+    height: 18px;
+    transition: fill var(--duration) var(--timing-function);
+
+    .modal-close:hover &,
+    .modal-close:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+    padding: 40px;
+}
+
+.form-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: var(--primary-text-color);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    color: var(--title-text-color);
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color var(--duration) var(--timing-function);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+
+.form-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill var(--duration) var(--timing-function);
+
+    .form-input:focus+& {
+        fill: var(--accent-color);
+    }
+}
+
+.form-textarea {
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color var(--duration) var(--timing-function);
+    resize: none;
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        margin-right: 7px;
+        background-image: url("../images/icon-not-check.svg");
+    }
+
+    .form-check:checked+&::before {
+        border-color: transparent;
+        background-image: url("../images/icon-check.svg");
+    }
+
+    .form-check:focus+&::before {
+        outline: 1px solid blue;
+    }
+}
+
+.form-group-check-label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.accept {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.form-button {
+    min-width: 200px;
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 10px 32px;
+    cursor: pointer;
+    color: var(--primary-write-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-self: center;
+    transition: box-shadow var(--duration) var(--timing-function),
+        background-color var(--duration) var(--timing-function);
+
+        &:hover,
+        &:focus {
+            background-color: #188CE8;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+}
+
+
