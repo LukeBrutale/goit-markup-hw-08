@@ -15,7 +15,7 @@
 
     <!-- HEADER -->
 
-    <header class="container header">
+    <header class="header">
         <div class="container header-nav">
         <nav class="navigation">
             <a href="./index.html" class="logo">
@@ -27,6 +27,11 @@
                 <li class="site-nav-item"><a href="#" class="site-nav-link">Контакты</a></li>
             </ul>
         </nav>
+        <button type="button" class="mobile-burger-btn" data-menu-button>
+            <svg class="mobile-burger-icon">
+                <use href="./images/sprite.svg#burger-icon"></use>
+            </svg>
+        </button>
             <ul class="auth-nav list">
                 <li class="auth-nav-item">
                     <a href="mailtoinfo@devstudio.com" class="auth-nav-link envelope">
@@ -45,8 +50,42 @@
                 </li>
                 </ul>
         </div> 
-    </header>
 
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-close-btn" data-menu-close>
+                <svg class="mobile-close-icon">
+                <use href="./images/sprite.svg#burger-close"></use>
+            </svg>              
+            </button>
+           <ul class="mobile-menu-site-nav list">
+               <li class="mobile-menu-site-item">
+                   <a href="./index.html" class="mobile-menu-site-link link current">Студия</a></li>
+               <li class="mobile-menu-site-item">
+                   <a href="./portfolio.html" class="mobile-menu-site-link link">Портфолио</a></li>
+               <li class="mobile-menu-site-item">
+                   <a href="#" class="mobile-menu-site-link link">Контакты</a></li>
+           </ul>
+
+           <ul class="mobile-menu-auth-nav list">
+               <li class="mobile-menu-auth-item">
+                   <a href="mailtoinfo@devstudio.com" class="mobile-menu-auth-link link">
+                       <svg class="mobile-menu-auth-icon" width="16" height="12">
+                           <use href="./images/sprite.svg#envelope"></use>
+                       </svg>info@devstudio.com
+                   </a>
+                </li>
+               <li class="mobile-menu-auth-item">
+                   <a href="tel:+380961111111" class="mobile-menu-auth-link link">
+                       <svg class="mobile-menu-auth-icon" width="10" height="16">
+                           <use href="./images/sprite.svg#smartphone"></use>
+                       </svg>+38 096 111 11 11
+                   </a>
+                </li>
+           </ul>
+
+
+
+    </header>
     <!-- MAIN -->
 
 
