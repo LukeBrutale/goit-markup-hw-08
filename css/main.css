@@ -141,6 +141,10 @@ img {
   color: var(--primary-text-color);
 }
 
+.mobile-menu-site-link.current {
+  color: var(--accent-color);
+}
+
 .logo {
   display: inline-block;
   padding-top: 24px;
