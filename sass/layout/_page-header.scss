@@ -34,7 +34,7 @@
         height: 100vh;
         top: 0;
         left: 50%;
-        transform:  translateX(-50%) translateY(-100%);
+        transform: translateX(-50%) translateY(-100%);
         background-color: var(--primary-write-color);
         padding-top: 48px;
         padding-left: 40px;
@@ -44,6 +44,12 @@
             transform: translateX(-50%) translateY(0%);
         }
     }
+
+    // top: 0;
+    // left: 50%;
+    // transform: translateX(-50%) translateY(-100%);
+    
+    // transform: translateX(-50%) translateY(0%);
 
     .mobile-menu-site-item {
         font-size: 40px;
