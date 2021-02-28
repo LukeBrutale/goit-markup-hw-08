@@ -1,40 +1,62 @@
-.overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: linear-gradient(to right,
-            var(--bg-gradient),
-            var(--bg-gradient)),
-        url(../images/bg/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+  .overlay {
+      max-width: 480px;
+    //   height: 400px;
+      margin-right: auto;
+      margin-left: auto;
+      background-image: linear-gradient(to right,
+              var(--bg-gradient),
+              var(--bg-gradient)),
+          url(../images/images/mobile/hero-mobile.jpg);
+      background-size: cover;
+  }
 
-.content-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: 63px 24px;
-    color: var(--primary-write-color);
-    background-color: rgba(33, 150, 243, 0.9);
-
-    transform: translateY(101%);
-    transition: transform var(--duration) var(--timing-function);
-
-      .content-link:hover &,
-      .content-link:focus & {
-          transform: translateY(0%);
+  @media (min-resolution: 2dppx) {
+      .overlay {
+          background-image: url(../images/images/mobile/hero-mobile@2x.jpg);
       }
+  }
 
-}
+  
 
 
-.overlay-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-}
+// .overlay {
+//     max-width: 1600px;
+//     height: 600px;
+//     margin-right: auto;
+//     margin-left: auto;
+//     background-image: linear-gradient(to right,
+//             var(--bg-gradient),
+//             var(--bg-gradient)),
+//         url(../images/bg/hero-bg.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+
+// .content-overlay {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     padding: 63px 24px;
+//     color: var(--primary-write-color);
+//     background-color: rgba(33, 150, 243, 0.9);
+
+//     transform: translateY(101%);
+//     transition: transform var(--duration) var(--timing-function);
+
+//       .content-link:hover &,
+//       .content-link:focus & {
+//           transform: translateY(0%);
+//       }
+
+// }
+
+
+// .overlay-text {
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 1.6;
+// }
+
