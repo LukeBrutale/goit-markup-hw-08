@@ -1,3 +1,19 @@
+.hero-btn {
+    min-width: 200px;
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 10px 32px;
+    cursor: pointer;
+
+    color: var(--primary-write-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+}
+
+
+
 // .button-nav {
 //     justify-content: center;
 //     display: flex;
@@ -53,5 +69,5 @@
 //     background-color: var(--accent-color);
 //     font-weight: 700;
 //     font-size: 16px;
-//     line-height: 1.9;
+//     line-height: 1.875;
 // }

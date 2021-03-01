@@ -6,16 +6,17 @@
 }
 
 
-// .hero-title {
-//     width: 700px;
-//     margin: 0 auto 30px;
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.4;
-//     letter-spacing: .06em;
-//     text-transform: uppercase;
-//     color: var(--primary-write-color);
-// }
+.hero-title {
+    width: 360px;
+    margin: 0 auto 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--primary-write-color);
+}
 
 // @media screen and (min-width: 480px) {
 //     .hero {
