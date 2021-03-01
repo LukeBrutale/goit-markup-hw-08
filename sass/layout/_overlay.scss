@@ -1,8 +1,5 @@
   .overlay {
-      // max-width: 480px;
       height: 400px;
-      // margin-right: auto;
-      // margin-left: auto;
       background-image: linear-gradient(to right,
               var(--bg-gradient),
               var(--bg-gradient)),
@@ -14,6 +11,44 @@
           background-image: url(../images/images/mobile/hero-mobile@2x.jpg);
         }
       }
+  }
+
+  @media screen and (min-width: 768px) {
+    .overlay {
+      height: 400px;
+      background-image: linear-gradient(to right,
+          var(--bg-gradient),
+          var(--bg-gradient)),
+        url(../images/images/tablet/hero-tablet.jpg);
+
+         @media (min-resolution: 2dppx) {
+           .overlay {
+             background-image: url(../images/images/tablet/hero-tablet@2x.jpg);
+             background-size: cover;
+           }
+        }
+    }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .overlay {
+          max-width: 1600px;
+          height: 600px;
+          margin-right: auto;
+          margin-left: auto;
+      background-image: linear-gradient(to right,
+          var(--bg-gradient),
+          var(--bg-gradient)),
+        url(../images/images/desktop/hero-desktop.jpg);
+
+        @media (min-resolution: 2dppx) {
+          .overlay {
+            background-image: url(../images/images/desktop/hero-desktop@2x.jpg);
+            background-size: cover;
+          }
+        }
+    }
   }
 
   
