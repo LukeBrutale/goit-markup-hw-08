@@ -63,7 +63,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   padding: 0 15px;
 }
 
@@ -75,7 +75,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -331,9 +331,7 @@ img {
 }
 
 .overlay {
-  max-width: 480px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 400px;
   background-image: linear-gradient(to right, var(--bg-gradient), var(--bg-gradient)), url(../images/images/mobile/hero-mobile.jpg);
   background-size: cover;
 }
@@ -352,7 +350,7 @@ img {
 }
 
 .hero-title {
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
