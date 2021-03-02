@@ -13,9 +13,7 @@
     .container {
         width: 480px;
         margin: 0 auto;
-    }
-
-     
+    }  
 }
 
 @media screen and (min-width: 768px) {
@@ -26,11 +24,6 @@
             display: flex;
             align-items: center;
         }
-
-        // .company-clients & {
-        //     display: flex;
-        //     flex-wrap: wrap;
-        // }
     }
 }
 

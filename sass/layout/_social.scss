@@ -50,6 +50,18 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .social-list {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .social-list-item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
 
  @media screen and (min-width: 768px) {
      .social-list {
