@@ -37,3 +37,16 @@
         fill: var(--primary-write-color);
     }
 }
+
+ @media screen and (max-width: 768px) {
+     .social-list {
+         display: flex;
+         justify-content: center;
+         
+     }
+
+     .social-list-item:not(:last-child) {
+         margin-right: 10px;
+     }
+ }
+
