@@ -103,6 +103,7 @@
 .form-footer input {
     width: 100%;
     margin-bottom: 20px;
+    padding: 15px 16px;
     min-height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -129,7 +130,7 @@
     line-height: 1.9;
     letter-spacing: 0.06em;
     width: 200px;
-    min-height: 50px;
+    height: 50px;
     border-color: transparent;
     border-radius: 4px;
     cursor: pointer;
@@ -187,6 +188,8 @@
    .footer-nav {
        display: inline-block;
        margin-top: 0;
+       margin-bottom: 0;
+       text-align: initial;
    }
 
    .footer-nav-item {
@@ -202,9 +205,35 @@
        width: 206px;
    }
 
+   .form-footer {
+       margin: 0 0 0 auto;
+   }
 
+   .form-footer-text {
+      text-align: initial;
+   }
+
+   .form-footer-mailing {
+        position: relative;
+        align-items: initial;
+        flex-direction: initial;
+   }
+
+   .form-footer input {
+       width: 358px;
+       margin-right: 12px;
+   }
+
+
+
+   .form-footer-icon {
+       width: 24px;
+       height: 24px;
+       margin-left: 10px;
+   }
 }
 
+ 
 
 
 
