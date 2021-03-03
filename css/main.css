@@ -96,8 +96,9 @@ img {
   }
 }
 
-.header {
+.header-nav {
   border-bottom: 1px solid #ECECEC;
+  height: 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -119,6 +120,7 @@ img {
   }
   .mobile-menu {
     position: absolute;
+    z-index: 1000;
     width: 100%;
     max-width: 100vw;
     height: 100vh;
@@ -188,6 +190,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .header-nav {
+    height: 80px;
+  }
   .mobile-burger-btn {
     display: none;
   }
@@ -373,6 +378,30 @@ img {
   }
 }
 
+.content-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  color: var(--primary-write-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform var(--duration) var(--timing-function);
+}
+
+.content-link:hover .content-overlay,
+.content-link:focus .content-overlay {
+  transform: translateY(0%);
+}
+
+.overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .hero {
   background-color: var(--secondary-bg-color);
   text-align: center;
@@ -402,6 +431,11 @@ img {
     font-size: 44px;
     line-height: 1.363;
   }
+}
+
+.section-progress {
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -721,23 +755,67 @@ img {
   line-height: 1.875;
 }
 
-.content {
+.button-nav {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.button-nav .item:not(:last-child) {
+  margin-right: 8.16px;
+}
+
+.button-nav .btn {
+  color: var(--primary-text-color);
+  background-color: var(--subsecondary-bg-color);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: color var(--duration) var(--timing-function), background-color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
+}
+
+.button-nav .btn:hover,
+.button-nav .btn:focus {
+  color: var(--primary-write-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-write-color);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .button-nav .item:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-nav {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-nav {
+    justify-content: center;
+    margin-bottom: 35px;
+  }
 }
 
 .flex-content {
-  width: 370px;
-  margin-right: 30px;
+  max-width: 450px;
+}
+
+.flex-content:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.flex-content:nth-child(3n) {
-  margin-right: 0;
-}
-
-.flex-content:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .content-link {
@@ -764,20 +842,39 @@ img {
 
 .content-box {
   padding: 20px 24px;
-  width: 370px;
+  max-width: 450px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
-
-.content-title {
-  margin-bottom: 4px;
 }
 
 .content-text {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.9;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .content-box {
+    width: 354px;
+  }
+  .flex-content {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-content {
+    width: 370px;
+  }
+  .content-box {
+    width: 370px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -983,7 +1080,7 @@ img {
   line-height: 1.9;
   letter-spacing: 0.06em;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
   border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
@@ -1054,8 +1151,14 @@ img {
   .footer-social-list {
     margin-bottom: 0;
   }
+  .footer-social-conect {
+    text-align: initial;
+  }
   .form-footer {
     margin: 0 0 0 auto;
+  }
+  .form-footer input {
+    margin-bottom: 0;
   }
   .form-footer-text {
     text-align: initial;

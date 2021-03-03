@@ -130,7 +130,7 @@
     line-height: 1.9;
     letter-spacing: 0.06em;
     width: 200px;
-    height: 50px;
+    min-height: 50px;
     border-color: transparent;
     border-radius: 4px;
     cursor: pointer;
@@ -208,8 +208,16 @@
        margin-bottom: 0;
    }
 
+   .footer-social-conect {
+       text-align: initial;
+   }
+
    .form-footer {
        margin: 0 0 0 auto;
+   }
+
+   .form-footer input {
+       margin-bottom: 0;
    }
 
    .form-footer-text {

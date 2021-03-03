@@ -51,6 +51,31 @@
     }
   }
 
+  .content-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 63px 24px;
+      color: var(--primary-write-color);
+      background-color: rgba(33, 150, 243, 0.9);
+
+      transform: translateY(101%);
+      transition: transform var(--duration) var(--timing-function);
+
+        .content-link:hover &,
+        .content-link:focus & {
+            transform: translateY(0%);
+        }
+  }
+
+  .overlay-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.6;
+  }
+
 
   
 

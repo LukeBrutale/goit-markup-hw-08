@@ -1,13 +1,17 @@
 
 
-.header {
+.header-nav {
     border-bottom: 1px solid #ECECEC;
+    height: 60px;
+    
 }
 
 
 
 
 @media screen and (max-width: 767px) {
+    
+
     .mobile-burger-btn,
     .mobile-close-btn {
         background-color: transparent;
@@ -29,6 +33,7 @@
 
     .mobile-menu {
         position: absolute;
+        z-index: 1000;
         width: 100%;
         max-width: 100vw;
         height: 100vh;
@@ -115,6 +120,10 @@
 }
 
  @media screen and (min-width: 768px) {
+    .header-nav {
+        height: 80px;
+    }
+
      .mobile-burger-btn {
          display: none;
      }
