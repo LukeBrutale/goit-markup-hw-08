@@ -36,6 +36,7 @@
   }
 }
 
+
   .section-function {
       padding-bottom: 94px;
   }
@@ -164,6 +165,11 @@
      }
 
      @media screen and (min-width: 1200px) {
+            .section-specifics {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
+
              .command {
                  padding-top: 94px;
                  padding-bottom: 94px;
