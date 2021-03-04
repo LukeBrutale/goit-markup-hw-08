@@ -36,6 +36,10 @@ body {
   line-height: 1.2;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -311,6 +315,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .auth-nav {
+    display: block;
+  }
   .auth-nav-link {
     display: flex;
     align-items: center;
@@ -1419,9 +1426,9 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    overflow: auto;
+    overflow: scroll;
     max-width: 100vw;
     max-height: 609px;
     height: 100vh;
