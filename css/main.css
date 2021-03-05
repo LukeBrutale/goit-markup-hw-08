@@ -105,14 +105,6 @@ img {
   height: 60px;
 }
 
-@media screen and (max-height: 790px) {
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .mobile-burger-btn,
   .mobile-close-btn {
@@ -142,7 +134,11 @@ img {
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
+  overflow: scroll;
   z-index: 1;
   width: 100%;
   max-width: 100vw;
@@ -157,6 +153,10 @@ img {
 
 .mobile-menu.is-open {
   transform: translateX(0%);
+}
+
+.mobile-menu-site-nav {
+  margin-bottom: 32px;
 }
 
 .mobile-menu-site-item {
@@ -178,7 +178,6 @@ img {
 }
 
 .mobile-menu-auth-item:not(:last-child) {
-  margin-top: 302px;
   margin-bottom: 32px;
 }
 
@@ -381,7 +380,10 @@ img {
 }
 
 .overlay {
+  max-width: 480px;
   height: 400px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: linear-gradient(to right, var(--bg-gradient), var(--bg-gradient)), url(../images/images/mobile/hero-mobile.jpg);
   background-size: cover;
   background-position: center;
@@ -395,7 +397,10 @@ img {
 
 @media screen and (min-width: 768px) {
   .overlay {
+    max-width: 768px;
     height: 400px;
+    margin-right: auto;
+    margin-left: auto;
     background-image: linear-gradient(to right, var(--bg-gradient), var(--bg-gradient)), url(../images/images/tablet/hero-tablet.jpg);
   }
 }
@@ -404,6 +409,7 @@ img {
   .overlay .overlay {
     background-image: url(../images/images/tablet/hero-tablet@2x.jpg);
     background-size: cover;
+    background-position: center;
   }
 }
 
@@ -421,6 +427,7 @@ img {
   .overlay .overlay {
     background-image: url(../images/images/desktop/hero-desktop@2x.jpg);
     background-size: cover;
+    background-position: center;
   }
 }
 
