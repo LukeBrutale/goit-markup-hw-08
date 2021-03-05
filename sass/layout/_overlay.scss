@@ -5,6 +5,7 @@
               var(--bg-gradient)),
           url(../images/images/mobile/hero-mobile.jpg);
       background-size: cover;
+      background-position: center;
 
       @media (min-resolution: 2dppx) {
         .overlay {

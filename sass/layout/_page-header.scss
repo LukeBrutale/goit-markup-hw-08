@@ -6,6 +6,15 @@
     
 }
 
+@media screen and (max-height: 790px) {
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
 
 
 
@@ -50,7 +59,7 @@
         left: 0;
         transform: translateX(-150%);
         background-color: var(--primary-write-color);
-        padding: 48px 40px;
+        padding: 48px 30px;
         transition: var(--duration) var(--timing-function);
         
 
@@ -58,6 +67,8 @@
             transform: translateX(0%);
         }
     }
+    
+   
 
     .mobile-menu-site-item {
         font-size: 40px;
@@ -136,6 +147,7 @@
     }
 }
 
+
  @media screen and (min-width: 768px) {
     .header-nav {
         height: 80px;
@@ -151,3 +163,9 @@
      }
 
  }
+
+//  @media screen and (min-height: 790px) {
+//       .mobile-menu-site-nav {
+//           margin-bottom: 302px;
+//       }
+//  }

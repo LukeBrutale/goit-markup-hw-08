@@ -105,6 +105,14 @@ img {
   height: 60px;
 }
 
+@media screen and (max-height: 790px) {
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mobile-burger-btn,
   .mobile-close-btn {
@@ -143,7 +151,7 @@ img {
   left: 0;
   transform: translateX(-150%);
   background-color: var(--primary-write-color);
-  padding: 48px 40px;
+  padding: 48px 30px;
   transition: var(--duration) var(--timing-function);
 }
 
@@ -376,6 +384,7 @@ img {
   height: 400px;
   background-image: linear-gradient(to right, var(--bg-gradient), var(--bg-gradient)), url(../images/images/mobile/hero-mobile.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 @media (min-resolution: 2dppx) {
